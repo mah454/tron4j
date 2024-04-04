@@ -1,0 +1,126 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.tron.trident</groupId>
+    <artifactId>tron4j</artifactId>
+    <packaging>pom</packaging>
+    <version>0.1</version>
+    <name>tron4j</name>
+    <url>http://maven.apache.org</url>
+
+    <modules>
+        <module>abi</module>
+        <module>core</module>
+        <module>utils</module>
+    </modules>
+
+
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- GRPC -->
+            <dependency>
+                <groupId>io.grpc</groupId>
+                <artifactId>grpc-protobuf</artifactId>
+                <version>1.31.0</version>
+            </dependency>
+            <dependency>
+                <groupId>io.grpc</groupId>
+                <artifactId>grpc-stub</artifactId>
+                <version>1.31.0</version>
+            </dependency>
+            <dependency>
+                <groupId>io.grpc</groupId>
+                <artifactId>grpc-okhttp</artifactId>
+                <version>1.31.0</version>
+            </dependency>
+            <dependency>
+                <groupId>io.grpc</groupId>
+                <artifactId>protoc-gen-grpc-java</artifactId>
+                <version>1.31.0</version>
+                <type>pom</type>
+            </dependency>
+
+            <!-- Tomcat annotations -->
+            <dependency>
+                <groupId>org.apache.tomcat</groupId>
+                <artifactId>annotations-api</artifactId>
+                <version>6.0.53</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <!-- BouncyCastle -->
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcprov-jdk18on</artifactId>
+                <version>1.77</version>
+            </dependency>
+
+            <!-- Google Guava -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>33.1.0-jre</version>
+            </dependency>
+
+            <!-- Google Protobuf -->
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java</artifactId>
+                <version>3.25.3</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java-util</artifactId>
+                <version>3.25.3</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protoc</artifactId>
+                <version>3.25.3</version>
+                <type>pom</type>
+            </dependency>
+
+
+            <!--        <dependency>-->
+            <!--            <groupId>io.netty</groupId>-->
+            <!--            <artifactId>netty-all</artifactId>-->
+            <!--            <version>4.1.108.Final</version>-->
+            <!--        </dependency>-->
+
+
+            <!-- Unit test -->
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter</artifactId>
+                <version>5.10.1</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <finalName>license-server</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <release>21</release>
+                </configuration>
+            </plugin>
+        </plugins>
+
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.xolstice.maven.plugins</groupId>
+                    <artifactId>protobuf-maven-plugin</artifactId>
+                    <version>0.6.1</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+</project>
