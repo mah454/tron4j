@@ -40,5 +40,5 @@ nb-configuration.xml
 *.log
 
 # Ignore protobuf auto generated files
-core/src/main/java/org/tron/trident/proto/*.java
-core/src/main/java/org/tron/trident/api/GrpcAPI.java
+core/src/main/java/ir/moke/tron4j/proto/*.java
+core/src/main/java/ir/moke/tron4j/api/GrpcAPI.java
