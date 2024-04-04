@@ -23,17 +23,17 @@ Now use libraries on your project :
 
 <dependencies>
     <dependency>
-        <groupId>org.tron.trident</groupId>
+        <groupId>ir.moke.tron4j</groupId>
         <artifactId>abi</artifactId>
         <version>0.1</version>
     </dependency>
     <dependency>
-        <groupId>org.tron.trident</groupId>
+        <groupId>ir.moke.tron4j</groupId>
         <artifactId>utils</artifactId>
         <version>0.1</version>
     </dependency>
     <dependency>
-        <groupId>org.tron.trident</groupId>
+        <groupId>ir.moke.tron4j</groupId>
         <artifactId>core</artifactId>
         <version>0.1</version>
     </dependency>

@@ -1,7 +1,7 @@
 syntax = "proto3";
 package protocol;
 
-option java_package = "org.tron.trident.api";
+option java_package = "ir.moke.tron4j.api";
 option java_outer_classname = "GrpcAPI";
 
 import "core/common.proto";

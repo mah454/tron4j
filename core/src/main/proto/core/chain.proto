@@ -1,7 +1,7 @@
 syntax = "proto3";
 package protocol;
 
-option java_package = "org.tron.trident.proto";
+option java_package = "ir.moke.tron4j.proto";
 
 import "google/protobuf/any.proto";
 import "core/common.proto";
