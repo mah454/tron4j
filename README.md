@@ -9,9 +9,8 @@ This sdk copied from https://github.com/tronprotocol/trident .
 * Removed wrong dependencies
 * CleanUp and improvements
 
-**Note :** Ignored protobuf classes on `.gitignore` file .
-Run this command :   
-Compile and installed library on `$HOME/.m2` .
+**Note :** Ignored protobuf classes on `.gitignore` file . **Do not need** to change `.gitignore` file.   
+Only compile and installed library on `$HOME/.m2` .
 
 ```shell
 mvn clean compile package install
