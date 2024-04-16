@@ -126,7 +126,7 @@ message ResourceReceipt {
 
 message TransactionInfo {
   enum code {
-    SUCESS = 0;
+    SUCCESS = 0;
     FAILED = 1;
   }
   message Log {
